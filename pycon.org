@@ -107,7 +107,6 @@
 ** Author
 *** Working on "Destroy All Software"
 **** Something to do with screencasts
-
 * Context Managers and Decorators
 ** TODO DecoratorManagers
 *** from contextlib import contextmanager
@@ -154,3 +153,39 @@
 ***** pepare_files
 ***** install
 ***** cleanup_SOMETHNIG
+* Extreme Network Programming
+** TODO sigslot
+*** observer
+** multicast on if with no route to sender drops packet
+** Multicast reliablity
+*** RFC
+**** 5740 -- NORM
+**** 5053
+** SOL_PACKET not defined in python sockets module
+** tuntap
+*** tun -> IP only
+*** top -> has ethernet
+** TODO dpkt
+*** str(pkt) -> packet buffer
+*** Fragmented packets are decoded wrong
+** Bridging
+*** Problems
+**** ETH_P_ALL will see it's own packets
+**** loops
+*** Solution
+**** packet type of sockaddr_ll
+** Fault/Distrupt tolerant
+*** RFC 4838
+*** Can networks work with uptime < 5% (e.g. space)
+**** Would web services work between earth and saturn with 100% uptime?
+***** No.
+****** Interactive, syn/ack fail
+***** LS limit
+*** TODO Bundle Protocol
+*** Store-and-forward
+*** Endpoints are URIs
+**** No IP
+**** No DNS
+**** dtn://mode.hierarchy.dtn/path/to/service
+*** Peronal note
+**** This smells a little bit like 0mq's ideas of abstractions for sockets
