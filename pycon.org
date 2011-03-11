@@ -75,3 +75,15 @@
 ***** Resolver Systems -- IronClad
 ****** Support for running C extensions
 ****** Needs help, C#
+
+* Backup is hard -- BitBacker
+** Bigness
+*** There are too many files
+**** Generators
+** API
+*** TODO restlib.py -- Opensource?
+** URL Story
+*** There was a 4M char URL..
+** HTTP
+*** S3
+**** ~100ms write latency (At the time)
