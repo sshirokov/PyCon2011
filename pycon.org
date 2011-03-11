@@ -1,4 +1,7 @@
 * GDB7 -> Python
+** python gdb command
+** gdb module imported
+
 * Clouds
 ** `OpenStack'
 ** Start Here
