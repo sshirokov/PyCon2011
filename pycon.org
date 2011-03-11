@@ -115,3 +115,19 @@
 ** TODO functools.total_ordering
 ** TODO from tempfile import NamedTemporaryFile
 *** with NamedTemporaryFile('w+') as tmp: #etc
+
+* Ian Bicking's brain -- PIP/Virtualenv
+** site-packages
+*** On boot "site.py" is loaded to find site-packages
+**** site.py is in the stdlib
+**** sys.prefix and sys.exec_prefix
+*** --I MISSED THINGS-- :(
+**** Explanation of hand-rolling venv
+**** Fails (But works in that regard) because of missing site-pacages
+*** Code can detect presense of venv
+**** Check for sys.real_prefix
+*** Bootstrap (site.py) requires stdlib
+**** os, etc
+**** Linked to bootstrap
+
+
