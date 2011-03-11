@@ -29,4 +29,6 @@
 *** Jython (Frank Wierzbicki)
 **** JVM GC
 *** Iron Python (Dino Viehland)
-**** Uhh, .NET?
+**** "MSPL" => APache
+***** OSI aproved?! wtf.
+***** Switched to Apache because people "were nervous"
