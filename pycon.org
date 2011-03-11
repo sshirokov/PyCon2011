@@ -129,5 +129,27 @@
 *** Bootstrap (site.py) requires stdlib
 **** os, etc
 **** Linked to bootstrap
-
-
+*** venv forks site.py
+*** Alts
+**** --missed one--
+**** rvirtualenv
+**** PYTHONHOME
+**** pythonv
+***** "Might be like virtualenv in python itself"
+*** PIP
+**** "Ugliest. Hack. Ever. (Sorry, Ian)"
+**** Does: import, pick setup file, execfile
+***** :(
+***** But hey, it works.
+**** Always uses setuptools
+**** TODO --record
+***** Record everything that's getting installed.
+**** Using PIP as an API
+***** RequirementSet object
+***** InstallRequirement object
+***** reqset.add_requirement(IR)
+***** finder = PackageFinder(...)
+***** reqset.
+****** pepare_files
+****** install
+****** cleanup_SOMETHNIG
