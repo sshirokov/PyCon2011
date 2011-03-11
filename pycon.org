@@ -1,0 +1,14 @@
+* GCC7 -> Python
+* Clouds
+** `OpenStack'
+** Start Here
+*** ansolabs.com/deploy
+*** gh/ansolabs
+**** openstack cookbook + chef
+** Interesting "Req"
+*** TODO `Vagrant'
+    API for vbox
+**** gist/786945/solo.rb
+**** euca-add-keypair
+**** euca-run-instances
+**** euca-descibe-instances
