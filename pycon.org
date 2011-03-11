@@ -107,3 +107,11 @@
 ** Author
 *** Working on "Destroy All Software"
 **** Something to do with screencasts
+
+* Context Managers and Decorators
+** TODO DecoratorManagers
+*** from contextlib import contextmanager
+** TODO functools.lru_cache
+** TODO functools.total_ordering
+** TODO from tempfile import NamedTemporaryFile
+*** with NamedTemporaryFile('w+') as tmp: #etc
