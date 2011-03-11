@@ -16,4 +16,5 @@
 **** euca-run-instances
 **** euca-descibe-instances
 *** TODO `libvertd' && `libvertclient'
-** 
+
+
