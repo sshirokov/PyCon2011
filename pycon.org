@@ -37,12 +37,19 @@
 ***** Language freedom competes with sandboxing on goals
 ***** Language level sandboxing is hard, VM level is correct
 *** PyPy (Maciej Fijalkowski)
+**** Ctypes
+***** Has branch to make it faster
+***** cpyx(?)::ironclad
+****** "Emulates refcounting"
+***** 
 **** Quotes
      "Fast, and has no differences. Use it if you like CPython and you want it to run fast."
 **** Perf
      http://speed.pypy.org
 **** Sandboxing built in
 *** Jython (Frank Wierzbicki)
+**** Doesn't have Ctypes
+***** Wants it from IronPython, more or less
 **** "PBVCM" or something like it
 ***** Bytecode interpreter
 **** JVM GC
@@ -61,3 +68,10 @@
 ***** Does not want sandboxing as a language feature
 ***** Rather catch perf, 3
 ***** Sandboxing is from .NET
+**** Ctypes
+***** Since 2.6
+***** "Encourage everyone to use Ctypes"
+****** Most portable way to expose code
+***** Resolver Systems -- IronClad
+****** Support for running C extensions
+****** Needs help, C#
