@@ -84,6 +84,24 @@
 *** TODO restlib.py -- Opensource?
 ** URL Story
 *** There was a 4M char URL..
-** HTTP
-*** S3
+** HTTP Client
+*** TODO asyncore
+*** S3 (2007-2008)
 **** ~100ms write latency (At the time)
+**** Writes 500, 503, fail, bounce in ways
+*** You can use HTTPlib as just a parser!
+**** Replace def connect()
+***** Use fake socket that uses StringIO
+*** TODO asynchttp -- Opensource
+** The System
+*** Crawl->Diff->spool--{n}-->Chunks->Store
+*** Crawl's a generator
+*** Manifest that is diffed is cached
+** OpenSource
+*** Dingus -- Mocking
+*** TODO blog.extracheese.org
+**** Will post soon
+***** restlib, asynchttp with new names
+** Author
+*** Working on "Destroy All Software"
+**** Something to do with screencasts
