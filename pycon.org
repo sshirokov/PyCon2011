@@ -12,4 +12,5 @@
 **** euca-add-keypair
 **** euca-run-instances
 **** euca-descibe-instances
+*** TODO `libvertd' && `libvertclient'
 ** 
