@@ -18,6 +18,8 @@
 *** TODO `libvertd' && `libvertclient'
 
 * VM Panel
+** Convore
+   https://convore.com/pycon-2011/python-vm-panel/
 ** Speakers
 *** CPython (Dr. Brett Cannon)
 **** Exists to ref-imp
