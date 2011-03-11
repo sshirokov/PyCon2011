@@ -23,6 +23,9 @@
 ** PyPy (Maciej Fijalkowski)
 *** Quotes
     "Fast, and has no differences. Use it if you like CPython and you want it to run fast."
-*** Perf: 
+*** Perf
+    http://speed.pypy.org
 ** Jython (Frank Wierzbicki)
+*** JVM GC
 ** Iron Python (Dino Viehland)
+*** Uhh, .NET?
