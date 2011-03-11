@@ -21,6 +21,10 @@
 ** Speakers
 *** CPython (Dr. Brett Cannon)
 **** Exists to ref-imp
+**** Language Moratorium (2yrs)
+***** Expired "last month" (3/11/11)
+***** 3.1~ish stop changing the language
+***** Anything that would make "Books change"
 *** PyPy (Maciej Fijalkowski)
 **** Quotes
      "Fast, and has no differences. Use it if you like CPython and you want it to run fast."
