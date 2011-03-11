@@ -17,4 +17,12 @@
 **** euca-descibe-instances
 *** TODO `libvertd' && `libvertclient'
 
-
+* VM Panel
+** CPython (Dr. Brett Cannon)
+*** Exists to ref-imp
+** PyPy (Maciej Fijalkowski)
+*** Quotes
+    "Fast, and has no differences. Use it if you like CPython and you want it to run fast."
+*** Perf: 
+** Jython (Frank Wierzbicki)
+** Iron Python (Dino Viehland)
