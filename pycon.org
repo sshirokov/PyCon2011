@@ -77,6 +77,8 @@
 ****** Needs help, C#
 
 * Backup is hard -- BitBacker
+** Convore
+   [[https://convore.com/pycon-2011/backup-is-hard-lets-go-shopping-gary-bernhardt/]]
 ** Bigness
 *** There are too many files
 **** Generators
