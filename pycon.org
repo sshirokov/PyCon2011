@@ -22,6 +22,9 @@
    https://convore.com/pycon-2011/python-vm-panel/
 ** Speakers
 *** CPython (Dr. Brett Cannon)
+**** Unladen Swallow
+***** Last part of development time was spent updating LLVM
+***** Integration to CPython: "It's resting"
 **** Exists to ref-imp
 **** Language Moratorium (2yrs)
 ***** Expired "last month" (3/11/11)
@@ -29,14 +32,32 @@
 ***** Anything that would make "Books change"
 ***** Coming in 3.3 thanks to expiration
 ****** PEP-380 -- yeild from
+**** Sandboxing
+***** Sandboxing was a good "dead end for my thesis"
+***** Language freedom competes with sandboxing on goals
+***** Language level sandboxing is hard, VM level is correct
 *** PyPy (Maciej Fijalkowski)
 **** Quotes
      "Fast, and has no differences. Use it if you like CPython and you want it to run fast."
 **** Perf
      http://speed.pypy.org
+**** Sandboxing built in
 *** Jython (Frank Wierzbicki)
+**** "PBVCM" or something like it
+***** Bytecode interpreter
 **** JVM GC
+**** Plan
+***** "Loves to skip releases"
+***** Make 2.6, go to 3 and see if they need 2.7
+**** Trivia
+***** Using unicode internally all the time
 *** Iron Python (Dino Viehland)
+**** Intends to beat pypy to 2.7
+***** Aiming for this week?
 **** "MSPL" => APache
 ***** OSI aproved?! wtf.
 ***** Switched to Apache because people "were nervous"
+**** Sandboxing
+***** Does not want sandboxing as a language feature
+***** Rather catch perf, 3
+***** Sandboxing is from .NET
