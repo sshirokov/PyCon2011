@@ -504,4 +504,9 @@
 *** TODO grace
 **** C++
 ** Handling ridiculous amounts of data with probabilistic data structures
+*** Open Research Computation
+*** $10K/200G to generate sequence
+**** x1000 sequencers
+**** nonlinear scale
+*** TODO 'de Bruin graph approach to assembly'
 
