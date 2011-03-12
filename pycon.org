@@ -191,3 +191,5 @@
 **** dtn://mode.hierarchy.dtn/path/to/service
 *** Peronal note
 **** This smells a little bit like 0mq's ideas of abstractions for sockets
+* Rev. Healy
+** Awesome.
