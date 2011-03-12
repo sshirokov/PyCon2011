@@ -263,7 +263,98 @@
 *** Documentation Culture
 *** Concepts apply wider than OSS
 *** Why people read docs?
-**** 
+    Everyone
+**** New users need docs
+**** Education
+***** New and existing users need to learn
+**** Support
+***** Experienced users
+****** e.g.
+       Leave a note for things you may need to lookup, even yourself
+**** Troubleshooting
+***** Annoyed users
+**** Internals
+***** Fellow developers
+****** Contribution guides!
+       How do I contribute to a project?
+******* "How do I contribute to company X?"
+        Good for internal, private codes, too.
+**** Refference
+***** "Does anyone here know strf formatting?"
+**** Documentation is communication
+***** Silent users
+****** No IRC, No lists, no Reddit
+****** They will only read your docs
+****** Have same things in the docs that you would tell peole on IRC
+**** Great documentation has to serve multiple conflicting masters
+***** "Pitch your communication to the people talking to you"
+***** "You have to document things multiple times"
 *** Who should write docs?
+    Developers
+**** Great documentation is written by great developers
+***** Channel excitement into prose
+**** Anyone.
+***** But...
+****** "A great way for new contributors to get started with our project is to contribute documentation"
+******* New users don't know how your code works yet!
+****** 1) Wiki -> 2) ? -> 3) GREAT DOCS!
+******* This does not work.
+******* Chef does it. It's
+**** Perfection is not possible.
+***** Just because you have little or crap now, doesn't mean it won't improve
+****** Don't let it stop contribution.
+**** "Documentation driven development" (Another talk here)
+***** Write docs first.
+***** See TDD
 *** What should be documented?
+**** Tutorials
+     "Don't use tutorials as a loss leader to sell books"
+***** "Show off how the project feels"
+***** quick
+****** Something you can win at in 30 minutes
+******* 30 minutes is important.
+******* Developer will trust you in 30 minutes
+******* Getting someone to a positive experience is important
+***** Easy
+****** Help users feel epic win
+***** Not too easy
+****** Don't sugar-coat the truth
+****** Should weed out people that shouldn't use the project
+******* Your intented audience should be able to complete it
+**** Topic guides
+***** !Tutorials
+****** Don't hold hands, not copy pasta
+***** Conceptual
+****** Foster understanding not parroting
+***** Comprehensive
+****** Explain in detail
+       This is not the time to gloss over things
+***** Tell me the "Why" of the topic
+**** Refference
+***** Complete
+      "Docs or it didn't happen"
+***** Telling people to read the source is not an option
+***** Auto-generated reference is almost worth it
+***** No substitute for documentation written by people
+****** Don't try to make software write in english
+**** Troubleshooting
+***** Answers to question asked in anger
+***** FAQ are good with the Qs are actually FA'd
+***** "the one I forgot about" "the one everyone forgets about"
+*** Documentation is fractal
+**** Each part of the docs has subsections that are recursive in this process
+**** TODO Get the slides, has good table
 *** Which tools should we use?
+**** Tools [almost] don't matter
+***** For the most part
+      "Tools don't matter, but there are good ones, so use them"
+***** Suggestions
+****** Sphinx
+******* ReadtheDocs
+****** Literal programming
+******* Good for generating guides
+**** Tool suggestion for end-user docs (Screenshots?)
+***** Sphinx
+***** Screencasts
+****** Good for UI
+****** Personal: I still fucking hate them.
