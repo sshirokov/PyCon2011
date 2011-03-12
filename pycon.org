@@ -259,3 +259,11 @@
 *** Live demo of pi computation on Intrepid
 **** 40960 cores in use + MPI
 **** [[http://status.alcf.anl.gov]]
+** Writing Great Documentation
+*** Documentation Culture
+*** Concepts apply wider than OSS
+*** Why people read docs?
+**** 
+*** Who should write docs?
+*** What should be documented?
+*** Which tools should we use?
