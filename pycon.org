@@ -481,3 +481,21 @@
 **** Improper support threading/distribution
 **** No async support
 **** Too-picky about timing
+** Exhibition of Atrocity
+*** Hungarian notation
+*** PEP8
+**** Lining things up is hilarious
+*** Lots of lambdas
+**** Encourages short variables
+**** Making it harder
+*** getters and setters that do nothing
+*** Data Transfer Objects
+*** God modules are a smell.
+**** Refactor.
+*** Global state
+*** Diaper pattern
+**** Bare excepts
+*** TODO
+**** [[ASIN.cc/~11GQo]] -- Clean code
+**** snake-guice
+**** mock
