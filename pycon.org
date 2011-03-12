@@ -510,5 +510,10 @@
 **** nonlinear scale
 *** TODO 'de Bruin graph approach to assembly'
 ** Through the side channel
-*** 
+*** Side channel attack
+**** antioptimization
+***** analyze(Performance + problem domain) -> inputs
+*** TODO Find the research for locating yourself within the same physical host to an EC2 target
+*** pow(a, b, c) has sawtooth performance with largely free performance for factors of the mod
+*** Timing security sensitive code is an important test
 
