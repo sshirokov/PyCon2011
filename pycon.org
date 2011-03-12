@@ -1,195 +1,199 @@
-* GDB7 -> Python
-** python gdb command
-** gdb module imported
+* 3/11/2011
+** GDB7 -> Python
+*** python gdb command
+*** gdb module imported
 
-* Clouds
-** `OpenStack'
-** Start Here
-*** ansolabs.com/deploy
-*** gh/ansolabs
-**** openstack cookbook + chef
-** Interesting "Req"
-*** TODO `Vagrant'
-    API for vbox
-**** gist/786945/solo.rb
-**** euca-add-keypair
-**** euca-run-instances
-**** euca-descibe-instances
-*** TODO `libvertd' && `libvertclient'
+** Clouds
+*** `OpenStack'
+*** Start Here
+**** ansolabs.com/deploy
+**** gh/ansolabs
+***** openstack cookbook + chef
+*** Interesting "Req"
+**** TODO `Vagrant'
+     API for vbox
+***** gist/786945/solo.rb
+***** euca-add-keypair
+***** euca-run-instances
+***** euca-descibe-instances
+**** TODO `libvertd' && `libvertclient'
 
-* VM Panel
-** Convore
-   https://convore.com/pycon-2011/python-vm-panel/
-** Speakers
-*** CPython (Dr. Brett Cannon)
-**** Unladen Swallow
-***** Last part of development time was spent updating LLVM
-***** Integration to CPython: "It's resting"
-**** Exists to ref-imp
-**** Language Moratorium (2yrs)
-***** Expired "last month" (3/11/11)
-***** 3.1~ish stop changing the language
-***** Anything that would make "Books change"
-***** Coming in 3.3 thanks to expiration
-****** PEP-380 -- yeild from
-**** Sandboxing
-***** Sandboxing was a good "dead end for my thesis"
-***** Language freedom competes with sandboxing on goals
-***** Language level sandboxing is hard, VM level is correct
-*** PyPy (Maciej Fijalkowski)
-**** Ctypes
-***** Has branch to make it faster
-***** cpyx(?)::ironclad
-****** "Emulates refcounting"
-***** 
-**** Quotes
-     "Fast, and has no differences. Use it if you like CPython and you want it to run fast."
-**** Perf
-     http://speed.pypy.org
-**** Sandboxing built in
-*** Jython (Frank Wierzbicki)
-**** Doesn't have Ctypes
-***** Wants it from IronPython, more or less
-**** "PBVCM" or something like it
-***** Bytecode interpreter
-**** JVM GC
-**** Plan
-***** "Loves to skip releases"
-***** Make 2.6, go to 3 and see if they need 2.7
-**** Trivia
-***** Using unicode internally all the time
-*** Iron Python (Dino Viehland)
-**** Intends to beat pypy to 2.7
-***** Aiming for this week?
-**** "MSPL" => APache
-***** OSI aproved?! wtf.
-***** Switched to Apache because people "were nervous"
-**** Sandboxing
-***** Does not want sandboxing as a language feature
-***** Rather catch perf, 3
-***** Sandboxing is from .NET
-**** Ctypes
-***** Since 2.6
-***** "Encourage everyone to use Ctypes"
-****** Most portable way to expose code
-***** Resolver Systems -- IronClad
-****** Support for running C extensions
-****** Needs help, C#
+** VM Panel
+*** Convore
+    https://convore.com/pycon-2011/python-vm-panel/
+*** Speakers
+**** CPython (Dr. Brett Cannon)
+***** Unladen Swallow
+****** Last part of development time was spent updating LLVM
+****** Integration to CPython: "It's resting"
+***** Exists to ref-imp
+***** Language Moratorium (2yrs)
+****** Expired "last month" (3/11/11)
+****** 3.1~ish stop changing the language
+****** Anything that would make "Books change"
+****** Coming in 3.3 thanks to expiration
+******* PEP-380 -- yeild from
+***** Sandboxing
+****** Sandboxing was a good "dead end for my thesis"
+****** Language freedom competes with sandboxing on goals
+****** Language level sandboxing is hard, VM level is correct
+**** PyPy (Maciej Fijalkowski)
+***** Ctypes
+****** Has branch to make it faster
+****** cpyx(?)::ironclad
+******* "Emulates refcounting"
+****** 
+***** Quotes
+      "Fast, and has no differences. Use it if you like CPython and you want it to run fast."
+***** Perf
+      http://speed.pypy.org
+***** Sandboxing built in
+**** Jython (Frank Wierzbicki)
+***** Doesn't have Ctypes
+****** Wants it from IronPython, more or less
+***** "PBVCM" or something like it
+****** Bytecode interpreter
+***** JVM GC
+***** Plan
+****** "Loves to skip releases"
+****** Make 2.6, go to 3 and see if they need 2.7
+***** Trivia
+****** Using unicode internally all the time
+**** Iron Python (Dino Viehland)
+***** Intends to beat pypy to 2.7
+****** Aiming for this week?
+***** "MSPL" => APache
+****** OSI aproved?! wtf.
+****** Switched to Apache because people "were nervous"
+***** Sandboxing
+****** Does not want sandboxing as a language feature
+****** Rather catch perf, 3
+****** Sandboxing is from .NET
+***** Ctypes
+****** Since 2.6
+****** "Encourage everyone to use Ctypes"
+******* Most portable way to expose code
+****** Resolver Systems -- IronClad
+******* Support for running C extensions
+******* Needs help, C#
 
-* Backup is hard -- BitBacker
-** Convore
-   [[https://convore.com/pycon-2011/backup-is-hard-lets-go-shopping-gary-bernhardt/]]
-** Bigness
-*** There are too many files
-**** Generators
-** API
-*** TODO restlib.py -- Opensource?
-** URL Story
-*** There was a 4M char URL..
-** HTTP Client
-*** TODO asyncore
-*** S3 (2007-2008)
-**** ~100ms write latency (At the time)
-**** Writes 500, 503, fail, bounce in ways
-*** You can use HTTPlib as just a parser!
-**** Replace def connect()
-***** Use fake socket that uses StringIO
-*** TODO asynchttp -- Opensource
-** The System
-*** Crawl->Diff->spool--{n}-->Chunks->Store
-*** Crawl's a generator
-*** Manifest that is diffed is cached
-** OpenSource
-*** Dingus -- Mocking
-*** TODO blog.extracheese.org
-**** Will post soon
-***** restlib, asynchttp with new names
-** Author
-*** Working on "Destroy All Software"
-**** Something to do with screencasts
-* Context Managers and Decorators
-** TODO DecoratorManagers
-*** from contextlib import contextmanager
-** TODO functools.lru_cache
-** TODO functools.total_ordering
-** TODO from tempfile import NamedTemporaryFile
-*** with NamedTemporaryFile('w+') as tmp: #etc
+** Backup is hard -- BitBacker
+*** Convore
+    [[https://convore.com/pycon-2011/backup-is-hard-lets-go-shopping-gary-bernhardt/]]
+*** Bigness
+**** There are too many files
+***** Generators
+*** API
+**** TODO restlib.py -- Opensource?
+*** URL Story
+**** There was a 4M char URL..
+*** HTTP Client
+**** TODO asyncore
+**** S3 (2007-2008)
+***** ~100ms write latency (At the time)
+***** Writes 500, 503, fail, bounce in ways
+**** You can use HTTPlib as just a parser!
+***** Replace def connect()
+****** Use fake socket that uses StringIO
+**** TODO asynchttp -- Opensource
+*** The System
+**** Crawl->Diff->spool--{n}-->Chunks->Store
+**** Crawl's a generator
+**** Manifest that is diffed is cached
+*** OpenSource
+**** Dingus -- Mocking
+**** TODO blog.extracheese.org
+***** Will post soon
+****** restlib, asynchttp with new names
+*** Author
+**** Working on "Destroy All Software"
+***** Something to do with screencasts
+** Context Managers and Decorators
+*** TODO DecoratorManagers
+**** from contextlib import contextmanager
+*** TODO functools.lru_cache
+*** TODO functools.total_ordering
+*** TODO from tempfile import NamedTemporaryFile
+**** with NamedTemporaryFile('w+') as tmp: #etc
 
-* Ian Bicking's brain -- PIP/Virtualenv
-** site-packages
-*** On boot "site.py" is loaded to find site-packages
-**** site.py is in the stdlib
-**** sys.prefix and sys.exec_prefix
-** --I MISSED THINGS-- :(
-**** Explanation of hand-rolling venv
-**** Fails (But works in that regard) because of missing site-pacages
-** virtualenv
-*** Code can detect presense of venv
-**** Check for sys.real_prefix
-*** Bootstrap (site.py) requires stdlib
-**** os, etc
-**** Linked to bootstrap
-*** venv forks site.py
-*** Alts
-**** --missed one--
-**** rvirtualenv
-**** PYTHONHOME
-**** pythonv
-***** "Might be like virtualenv in python itself"
-** PIP
-*** "Ugliest. Hack. Ever. (Sorry, Ian)"
-*** Does: import, pick setup file, execfile
-**** :(
-**** But hey, it works.
-*** Always uses setuptools
-*** TODO --record
-**** Record everything that's getting installed.
-*** Using PIP as an API
-**** RequirementSet object
-**** InstallRequirement object
-**** reqset.add_requirement(IR)
-**** finder = PackageFinder(...)
-**** reqset.
-***** pepare_files
-***** install
-***** cleanup_SOMETHNIG
-* Extreme Network Programming
-** TODO sigslot
-*** observer
-** multicast on if with no route to sender drops packet
-** Multicast reliablity
-*** RFC
-**** 5740 -- NORM
-**** 5053
-** SOL_PACKET not defined in python sockets module
-** tuntap
-*** tun -> IP only
-*** top -> has ethernet
-** TODO dpkt
-*** str(pkt) -> packet buffer
-*** Fragmented packets are decoded wrong
-** Bridging
-*** Problems
-**** ETH_P_ALL will see it's own packets
-**** loops
-*** Solution
-**** packet type of sockaddr_ll
-** Fault/Distrupt tolerant
-*** Open Source Impl
-    [[dtn.sf.net]]
-*** RFC 4838
-*** Can networks work with uptime < 5% (e.g. space)
-**** Would web services work between earth and saturn with 100% uptime?
-***** No.
-****** Interactive, syn/ack fail
-***** LS limit
-*** TODO Bundle Protocol
-*** Store-and-forward
-*** Endpoints are URIs
-**** No IP
-**** No DNS
-**** dtn://mode.hierarchy.dtn/path/to/service
-*** Peronal note
-**** This smells a little bit like 0mq's ideas of abstractions for sockets
-* Rev. Healy
-** Awesome.
+** Ian Bicking's brain -- PIP/Virtualenv
+*** site-packages
+**** On boot "site.py" is loaded to find site-packages
+***** site.py is in the stdlib
+***** sys.prefix and sys.exec_prefix
+*** --I MISSED THINGS-- :(
+***** Explanation of hand-rolling venv
+***** Fails (But works in that regard) because of missing site-pacages
+*** virtualenv
+**** Code can detect presense of venv
+***** Check for sys.real_prefix
+**** Bootstrap (site.py) requires stdlib
+***** os, etc
+***** Linked to bootstrap
+**** venv forks site.py
+**** Alts
+***** --missed one--
+***** rvirtualenv
+***** PYTHONHOME
+***** pythonv
+****** "Might be like virtualenv in python itself"
+*** PIP
+**** "Ugliest. Hack. Ever. (Sorry, Ian)"
+**** Does: import, pick setup file, execfile
+***** :(
+***** But hey, it works.
+**** Always uses setuptools
+**** TODO --record
+***** Record everything that's getting installed.
+**** Using PIP as an API
+***** RequirementSet object
+***** InstallRequirement object
+***** reqset.add_requirement(IR)
+***** finder = PackageFinder(...)
+***** reqset.
+****** pepare_files
+****** install
+****** cleanup_SOMETHNIG
+** Extreme Network Programming
+*** TODO sigslot
+**** observer
+*** multicast on if with no route to sender drops packet
+*** Multicast reliablity
+**** RFC
+***** 5740 -- NORM
+***** 5053
+*** SOL_PACKET not defined in python sockets module
+*** tuntap
+**** tun -> IP only
+**** top -> has ethernet
+*** TODO dpkt
+**** str(pkt) -> packet buffer
+**** Fragmented packets are decoded wrong
+*** Bridging
+**** Problems
+***** ETH_P_ALL will see it's own packets
+***** loops
+**** Solution
+***** packet type of sockaddr_ll
+*** Fault/Distrupt tolerant
+**** Open Source Impl
+     [[dtn.sf.net]]
+**** RFC 4838
+**** Can networks work with uptime < 5% (e.g. space)
+***** Would web services work between earth and saturn with 100% uptime?
+****** No.
+******* Interactive, syn/ack fail
+****** LS limit
+**** TODO Bundle Protocol
+**** Store-and-forward
+**** Endpoints are URIs
+***** No IP
+***** No DNS
+***** dtn://mode.hierarchy.dtn/path/to/service
+**** Peronal note
+***** This smells a little bit like 0mq's ideas of abstractions for sockets
+** Rev. Healy
+*** Awesome.
+* 3/12/2011
+** Python high performance computing
+*** 
