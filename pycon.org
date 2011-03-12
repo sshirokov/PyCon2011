@@ -358,3 +358,5 @@
 ***** Screencasts
 ****** Good for UI
 ****** Personal: I still fucking hate them.
+*** Design Justification
+**** Helps internalize the design to users
