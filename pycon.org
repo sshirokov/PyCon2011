@@ -196,4 +196,64 @@
 *** Awesome.
 * 3/12/2011
 ** Python high performance computing
+*** Portabilty important
+**** Hardware changes fast, frequently
+*** Languages used
+**** C/C++, Fortran, Python
+**** Sometimes, someone tries to run lisp
+*** Quote
+    "People are doing high performance computing with Python... how do we stop them?" -Senior Perfromance Engineer
+
+*** Easy to Optimize
+**** Easy to embed critical sections
+**** Only spend time on speed if really needed
+*** 2 BlueGene /P Systems
+**** Surveyor
+***** 1024 nodes
+***** 4096 cores
+**** Intrepid
+***** 40960 nodes
+***** 163840 cores
+**** Justification
+***** Common computers will fail at a rate of something like 1/45seconds
+**** Arch
+***** Chip
+****** PPC, like the wii but with more FPU
+******* Node card
+******** 32 chips, 4x4x2
+******** Rack
+********* 32 node cards
+*** Viz systems
+**** OS: SLES 10 SP 2
+**** 80TB -> Disk
+***** In Minutes.
+**** 7PB filled in a few days
+*** Parallelism
+**** GPU
+***** PyOpenCL
+****** Slower than CUDA, more abstraction
+***** PyCUDA
+**** MPI
+***** Preferred at LCF
+***** MPI standardized for years.
+***** TODO mpi4py
+****** Instead of passing around C datatypes pass around python objects
+****** Uses pickling, overhead
+****** Continous C buffers go at wire speed
+*** Gpaw (Project)
+**** DFT (Would take three weeks to explain what the hell that is)
+**** Nature, Chemistry, etc
+     Real, published science is being done.
+
+*** Downsides
+**** Difficult on weird OSes
+**** Polling
+**** Thread management
+**** Dynamic loading
+***** Not pleasant at scale
+**** Paralellel filesystems
+***** don't like metadata traffic
+***** don't like small files
+**** 1h 45m boot for hello world on large cluster.
+**** Python hacked to read files at one place, and MPI broadcasts them to the cluster
 *** 
