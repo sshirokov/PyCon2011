@@ -473,3 +473,11 @@
 ****** Map words to concepts concretely
 ****** New concepts get added first, then implemented
 ***** Saves decision overhead
+*** Debugging
+    You and users will make mistakes
+**** Error message of "an error occured"
+*** Performance issues
+**** Excessive "round trips"
+**** Improper support threading/distribution
+**** No async support
+**** Too-picky about timing
