@@ -509,4 +509,6 @@
 **** x1000 sequencers
 **** nonlinear scale
 *** TODO 'de Bruin graph approach to assembly'
+** Through the side channel
+*** 
 
