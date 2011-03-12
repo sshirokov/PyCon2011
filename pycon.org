@@ -256,4 +256,6 @@
 ***** don't like small files
 **** 1h 45m boot for hello world on large cluster.
 **** Python hacked to read files at one place, and MPI broadcasts them to the cluster
-*** 
+*** Live demo of pi computation on Intrepid
+**** 40960 cores in use + MPI
+**** [[http://status.alcf.anl.gov]]
