@@ -516,4 +516,9 @@
 *** TODO Find the research for locating yourself within the same physical host to an EC2 target
 *** pow(a, b, c) has sawtooth performance with largely free performance for factors of the mod
 *** Timing security sensitive code is an important test
+*** QA
+**** Random sleep is wrong
+***** Instead, don't early-terminate for more even timings
+****** Exposes data size instead, eases brute-force
+***** Perform secret checks in O(1), in every case
 
