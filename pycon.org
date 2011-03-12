@@ -367,12 +367,30 @@
 ** Api design antipatterns
    [[http://www.aleax.it/pycin11_adap.pdf]]
 *** Worst
+**** Accept SQL directly from users
+     "Exposes you to the Bobby Tables problem"
 **** Not having an API
 **** Not having a design
 ***** API that "Just happened"
 *** Too many APIs is also not good
-*** "extreme"
+**** Zero is wrong, Three is too many, four is right out
+**** One, maybe two is the "sweet spot"
+**** No one ever fully transitions to "the new API"
+**** Root cause:
+***** Transition from "not-really-designed" API
+**** Cause 2.0:
+***** Lack/Fear of commitment
+**** No benefit to the user
+**** Can do A in one, B in another, but not A and B together in either
+**** No silver bullets for API visioning
+*** Too "extreme"
 **** Lack of balance of concerns
+**** Don't force your implementation language on your API
+***** Don't expose language-specific data
+***** NO FUCKING PICKLES
+****** God, I fucking hate pickles.
+***** REST
+****** In other cases, still REST. >:[
 *** Undocumented APIs are as good as nonexistant
 **** Docs need examples
 ***** Examples should be tested
@@ -395,13 +413,63 @@
 ****** COM
 ***** Mac
 ****** Applescript
+*** APIs are the exception to the "Don't design up-front" rule
 *** Accidental API
 **** Bad because:
 ***** You're exposing internal implementation issues
 ***** Hard to change underlying impl. without borking API
 ****** You either won't change it or break clients
 ****** Or start growing many APIs
+****** UIs are mostly used by humans
+******* They are far more flexible.
+**** Instead do:
+***** Think about the API
+****** "If I were an outside programmer..."
+****** Don't just think it, implement it in your tools/scripts/aux
+****** Think of multiple alternative implementations of your system
+******* The common parts are what should be in the API
+******* The differences are accidents.
 **** No design, just showed up
 **** "Wait! We already have an API!"
 ***** Whatever your UI uses
 ***** Sometimes the DB itself
+*** Why do so much work?
+**** Thinking so much about your API gives insight into your system
+***** Leads to better architecture
+***** More modular systems
+**** Helps you properly divvy up the system
+***** Small as possible "in the core"
+***** As much as can be "outside"
+*** Layering APIs
+**** One lowest level
+***** Expose logical parts, not implementation
+***** Can be unfriendly as long as it's complete and fast
+**** _ALL_ Higher layers of API are implemented on lower levels of the API stack
+*** "Let's do both" problem
+**** Design is choice
+**** More often org problems, not personal problem
+**** e.g.
+***** Win32 CreateFile(.............) vs Unix open(path, flags, mode)
+***** gmpy
+****** Methods on instances vs unified method?
+******* FUCKIN' BOTH!
+******* No. Don't.
+*** Perfection is a bad excuse for not trying.
+**** You won't "get it right the first time"
+**** Iterate
+*** Inconsistency
+**** Arg ordering
+**** under_scoreCamelCase
+**** Mismatched verbs
+***** Remove/Delete/Erase
+***** Plurality
+**** Accronyms
+***** Don't upcase acronyms in names! HttpSendQuery vs HTTPSendQuery
+**** Why?
+***** Things change over time.
+***** Different people conceptualize differently
+**** Instead:
+***** "data dictionary"
+****** Map words to concepts concretely
+****** New concepts get added first, then implemented
+***** Saves decision overhead
