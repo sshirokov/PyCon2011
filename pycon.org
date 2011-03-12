@@ -499,3 +499,9 @@
 **** [[ASIN.cc/~11GQo]] -- Clean code
 **** snake-guice
 **** mock
+** Advanced Networking with 0MQ
+*** 0mq explodes if you knock :(
+*** TODO grace
+**** C++
+** Handling ridiculous amounts of data with probabilistic data structures
+
