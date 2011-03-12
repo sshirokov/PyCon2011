@@ -360,3 +360,9 @@
 ****** Personal: I still fucking hate them.
 *** Design Justification
 **** Helps internalize the design to users
+*** Is it right to not document things that you intend to change?
+**** No.
+     Every public API has documentation != Every private API has no documentation
+**** Balance between "Documented means public" and "Stop doing that, you'll put an eye out"
+** Api design antipatterns
+*** 
