@@ -543,4 +543,10 @@
 **** Strive for read-only app
 **** Try to render statically OOB
 *** "Never underestimate the value of not having to care how something works."
-*** 
+*** TODO "Bees with machine guns"
+**** DDOS tool that spins up in EC2
+*** TODO ushahidi
+**** Crowdsourcing
+*** TODO google-refine
+**** Cleans up bad data
+**** Has python API in early stages
