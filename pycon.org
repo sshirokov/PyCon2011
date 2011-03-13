@@ -521,4 +521,9 @@
 ***** Instead, don't early-terminate for more even timings
 ****** Exposes data size instead, eases brute-force
 ***** Perform secret checks in O(1), in every case
-
+* 3/13/2011
+** Outsiders look at cooroutines
+*** c10k problem
+*** Gevent
+**** libevent + greenlet
+*** TODO PEP-342
