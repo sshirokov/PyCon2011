@@ -534,3 +534,13 @@
 *** Mongo mongo mogno mongo mongo
 *** Mongo mongo mogno mongo mongo
 **** Mongo mongo mogno mongo mongo 
+** Best practices for impossible deadlines
+*** @onyxfish
+*** [[github.com/newsapps]]
+*** "Features no one's using? Get rid of it."
+**** Minimal legacy maintence
+*** "Migration introduce more bugs than anything else"
+**** Strive for read-only app
+**** Try to render statically OOB
+*** "Never underestimate the value of not having to care how something works."
+*** 
